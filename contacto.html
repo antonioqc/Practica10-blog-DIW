@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-Antonio Quesada Cuadrado</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="img/pr10diw_diseño1.png" width="200px">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Sección Infantil</a></li>
+                <li><a href="#">Sección Adultos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobremi.html">Sobre Mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formularioContacto">
+            <canvas id="micanvas" width="560" height="100"></canvas>
+            <script src="js/canvas.js"></script>
+            <p>Nombre*</p>
+            <input type="text" id="nombre" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ,.'-]{2,50}" required>
+            <p>Apellidos*</p>
+            <input type="text" id="apellidos" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ,.'-]{2,100}" required>
+            <p>Correo Electrónico*</p>
+            <input type="email" id="correo" placeholder="example@example.com" required>
+            <p>Edad:</p>
+            <input type="checkbox" name="input" id="Check me">
+            <label for="Check me">Mayor de 18</label>
+            <input type="checkbox" name="input" id="Check me">
+            <label for="Check me">Menor de 18</label>
+            <p>Fecha:</p>
+            <input type="date">
+            <p>Mensaje:</p>
+            <textarea name="" id="mensaje" cols="70" rows="20"></textarea>
+            <p><button>Enviar</button></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Redes Sociales</p>
+        <a href="https://www.facebook.com"><img src="img/facebook.svg" width="30px"></a>
+        <a href="https://www.twitter.com"><img src="img/twitter.svg" width="30px"></a>
+        <a href="https://www.linkedin.com"><img src="img/linkedin.svg" width="30px"></a>
+        <a href="https://www.github.com"><img src="img/github.svg" width="30px"></a>
+        <a href="https://www.instagram.com"><img src="img/instagram.svg" width="30px"></a>
+    </footer>
+</body>
+
+</html>

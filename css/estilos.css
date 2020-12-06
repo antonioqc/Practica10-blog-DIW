@@ -1,0 +1,187 @@
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    background-image: url("../img/fondo.jpg");
+}
+
+
+/*HEADER Y NAV*/
+header {
+    background-image: linear-gradient(to top, #ffc78c,#fce3c8);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav li {
+    padding: 14px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 16px;
+}
+
+nav ul li:hover {
+    transition-duration: 0.75s;
+    background-color: black;
+    padding: 14px 16px;
+}
+
+
+/*CONTENIDO ARTÍCULOS*/
+.contenido {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+} 
+
+.paginaPrincipal {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 1%;
+}
+
+article {
+    border-radius: 20px;
+    border-color: rgb(250, 243, 243);
+    text-align: center;
+    background-color: #fafafa;
+}
+
+article img:hover {
+    transform:scale(1.1);
+    filter: drop-shadow(7px 7px 3px gray);
+    margin-bottom: 1%;
+}
+
+article p {
+    margin: 2%;
+    text-align: justify;
+}
+
+
+/*ASIDE*/
+aside {
+    display: grid;
+    margin-bottom: 2%;
+    background-color: #FFF0E2;
+}
+
+aside p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.login form {
+    display: grid;
+    justify-items: center;
+}
+
+@keyframes animacionbotonLogin {
+    from {background-color: #f0af65; }
+    to {background-color: #f19f40;  box-shadow: 2px 2px 5px black;}
+} 
+
+.login button {
+    color: white;
+    font-size: 14px;
+    padding: 10px 10px;
+    margin-top: 2%;
+    background-color:  #f0af65;
+    animation-name: animacionbotonLogin; 
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.categorias form {
+    display: grid;
+    justify-items: center;
+}
+
+#categorias {
+    padding: 1%;
+    background-color: #fcdfbf;
+}
+
+.recomendados img {
+    width: 100%;
+}   
+
+
+/*FOOTER*/
+footer {
+    display: inline-block;
+    width: 100%; 
+    text-align: center;
+    background-image: linear-gradient(to right top, #ffc78c,#fce3c8,#f7e6d5);
+}
+
+footer p {
+    text-align: center;
+}
+
+footer img:hover {
+    transform: rotate(-25deg);
+} 
+
+
+/*FORMULARIO CONTACTO.HTML*/
+.formularioContacto button {
+    background-color: #f0af65; 
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.formularioContacto {
+    border-style: dotted;
+    border-width: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1%;  
+    text-align: center;
+}
+
+.formularioContacto input:valid {
+    border: 4px solid green;
+}
+
+.formularioContacto input:required:invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 0px 2px red; 
+}
+
+.formularioContacto input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px green;
+}
+
+.formularioContacto input::placeholder {
+    color: rgb(255, 103, 103);
+}
+
+.formularioContacto textarea:focus {
+    box-shadow: 0 0 2px 3px black; 
+}
+
+
+/*SOBREMI.HTML*/
+.sobremi {
+    display: grid;
+    text-align: center;
+    border-style: dotted;
+    border-width: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1%;  
+}
+
+
+
+
